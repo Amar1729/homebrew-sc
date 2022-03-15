@@ -5,6 +5,8 @@ class Sc < Formula
   version "7.16_1.1.2"
   sha256 "1802c9d3d60dac85feb783adf967bc0d2fd7e5f592d9d1df15e4e87d83efcf14"
 
+  uses_from_macos "ncurses"
+
   def install
     system "./configure"
     system "make"
